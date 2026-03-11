@@ -4,16 +4,22 @@ Go client SDK for the unofficial [Plaud](https://plaud.ai) API. List recordings,
 
 > **⚠️ Unofficial**: This SDK is not affiliated with Plaud. The API is reverse-engineered and may change without notice.
 
-## Setup
+## Install
+
+### Download Pre-built Binary
+
+Download the latest release for your platform from [GitHub Releases](https://github.com/justmiles/plaud-sdk/releases).
+
+### Build from Source
 
 ```bash
 # Install dependencies via devbox
 devbox shell
 
 # Build
-go build ./...
+devbox run build
 
-# Install the CLI
+# Or install to GOPATH
 go install ./cmd/plaud
 ```
 
