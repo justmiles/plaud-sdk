@@ -1,0 +1,21 @@
+{
+  "packages": [
+    "go@1.24.1"
+  ],
+  "shell": {
+    "init_hook": [
+      "echo 'Welcome to devbox!' > /dev/null"
+    ],
+    "scripts": {
+      "build": [
+        "CGO_ENABLED=0 go build -o plaud ./cmd/plaud"
+      ],
+      "build-windows": [
+        "CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build -o plaud.exe ./cmd/plaud"
+      ],
+      "test": [
+        "go test ./..."
+      ]
+    }
+  }
+}

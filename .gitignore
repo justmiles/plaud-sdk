@@ -1,0 +1,11 @@
+# Binaries
+plaud
+*.exe
+
+# devbox
+.devbox/
+
+# other
+.envrc
+.env
+
